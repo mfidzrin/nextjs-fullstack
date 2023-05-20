@@ -10,8 +10,8 @@ services:
     depends_on:
       - db
   db:
-    image:
-    restart:
+    image: postgres:13
+    restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
